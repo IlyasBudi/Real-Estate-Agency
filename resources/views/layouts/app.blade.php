@@ -11,6 +11,28 @@
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
 
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="{{ asset('images/favicon.png') }}" type="image/png">
+
+    <!-- 
+        - favicon
+    -->
+    <link rel="shortcut icon" href="{{ asset('favicon.svg') }}" type="image/svg+xml">
+
+    <!-- 
+        - custom css link
+    -->
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+
+    <!-- 
+        - google font link
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
     <!-- Styles -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -836,10 +858,11 @@
     {{-- main --}}
     <div
         class="relative sm:flex sm:justify-center sm:items-center min-h-screen bg-dots-darker bg-center bg-gray-100 dark:bg-dots-lighter dark:bg-gray-900 selection:bg-red-500 selection:text-white">
-        <div class="max-w-7xl mx-auto p-6 lg:p-8">
+        <div class="mx-auto">
             @yield('content')
         </div>
     </div>
+    @include('layouts.footer')
 </body>
 
 </html>
@@ -886,3 +909,7 @@
         }
     });
 </script>
+
+{{-- Ion Icon --}}
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
