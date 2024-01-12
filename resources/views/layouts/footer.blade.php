@@ -1,4 +1,4 @@
-<footer class="footer">
+<footer class="footer" id="contact">
 
     <div class="footer-top">
       <div class="container">
@@ -10,7 +10,7 @@
           </a>
 
           <p class="section-text">
-            Lorem Ipsum is simply dummy text of the and typesetting industry. Lorem Ipsum is dummy text of the printing.
+            Temukan properti impian Anda bersama kami, menawarkan pilihan terbaik dengan kualitas dan harga yang kompetitif.
           </p>
 
           <ul class="contact-list">
@@ -19,7 +19,7 @@
               <a href="#" class="contact-link">
                 <ion-icon name="location-outline"></ion-icon>
 
-                <address>Brooklyn, New York, United States</address>
+                <address>Serpong, Tangerang Selatan, Indonesia</address>
               </a>
             </li>
 
@@ -178,7 +178,7 @@
       <div class="container">
 
         <p class="copyright">
-          &copy; 2022 <a href="#">codewithsadee</a>. All Rights Reserved
+          &copy; 2024 <a href="#">Homeverse</a>. All Rights Reserved
         </p>
 
       </div>

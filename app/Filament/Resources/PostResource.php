@@ -38,6 +38,13 @@ class PostResource extends Resource
                 TextInput::make('slug')->required()->minLength(2),
                 RichEditor::make('content')->required(),
                 TextInput::make('meta_description'),
+                TextInput::make('price')->required(),
+                TextInput::make('building')->required(),
+                TextInput::make('land')->required(),
+                TextInput::make('bed')->required(),
+                TextInput::make('bath')->required(),
+                TextInput::make('sertif')->required(),
+                TextInput::make('location')->required(),
                 Checkbox::make('is_published'),
                 Hidden::make('user_id')
                 ->dehydrateStateUsing(fn ($state) => Auth::id()),

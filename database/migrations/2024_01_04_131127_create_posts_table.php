@@ -15,6 +15,13 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->text('content');
+            $table->text('price');
+            $table->text('building');
+            $table->text('land');
+            $table->text('bed');
+            $table->text('bath');
+            $table->text('sertif');
+            $table->text('location');
             $table->string('meta_description')->nullable();
             $table->boolean('is_featured')->default(0);
             $table->string('slug')->unique();

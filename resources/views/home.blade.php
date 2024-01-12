@@ -22,7 +22,7 @@
                     <h2 class="h1 hero-title">Find Your Dream House By Us</h2>
         
                     <p class="hero-text">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+                      Temukan properti impian Anda bersama kami, menawarkan pilihan terbaik dengan kualitas dan harga yang kompetitif.
                     </p>
         
                     <button class="btn">Make An Enquiry</button>
@@ -51,7 +51,7 @@
         
                     <p class="section-subtitle">About Us</p>
         
-                    <h2 class="h2 section-title">The Leading Real Estate Rental Marketplace.</h2>
+                    <h2 class="h2 section-title text-white">The Leading Real Estate Rental Marketplace.</h2>
         
                     <p class="about-text">
                       Over 39,000 people work for us in more than 70 countries all over the This breadth of global coverage,
@@ -96,8 +96,7 @@
                     </ul>
         
                     <p class="callout">
-                      "Enimad minim veniam quis nostrud exercitation
-                      llamco laboris. Lorem ipsum dolor sit amet"
+                      "Kami bangga menjadi bagian dari perjalanan properti klien kami, menyediakan layanan profesional dan personal yang unggul."
                     </p>
         
                     <a href="#service" class="btn">Our Services</a>
@@ -200,8 +199,10 @@
             {{-- End Services --}}
 
             {{-- Start Property --}}
-            <section class="properti">
-                <h1 class="text-center text-4xl font-bold text-white">My Blogs</h1>
+            <section class="properti" id="property">
+                <p class="section-subtitle">Properties</p> 
+                <h2 class="h2 section-title text-white">Featured Listings</h2>
+                {{-- <h1 class="text-center text-4xl font-bold text-white">My Blogs</h1> --}}
                 <div class="p-6 lg:p-8 mt-16">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
                         @foreach ($posts as $post)
@@ -211,13 +212,13 @@
 
                                 <div class="p-4">
                                     <a href="post/{{ $post->id }}">
-                                        <h3 class="text-lg font-medium text-gray-100">{{ $post->title }}</h3>
+                                        <h3 class="text-xl font-semibold text-gray-100">{{ $post->title }}</h3>
                                     </a>
 
-                                    <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
-                                        Rp. 500 Juta
+                                    <p class="mt-2 line-clamp-3 font-medium text-base/relaxed text-gray-300">
+                                        Rp. {{ $post->price }}
                                     </p>
-                                    <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+                                    <p class="mt-1 line-clamp-3 text-sm/relaxed text-gray-500">
                                         {{ $post->meta_description }}
                                     </p>
                                 </div>
@@ -247,8 +248,8 @@
                   </div>
         
                 </div>
-              </section>
-              {{-- End CTA --}}
+            </section>
+            {{-- End CTA --}}
 
         </article>
     </main>

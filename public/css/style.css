@@ -1650,5 +1650,23 @@ button, a { transition: var(--transition); }
 \*-----------------------------------*/
 
 .properti {
-  background: --cultured-2: hsl(192, 24%, 96%);
+  /* background-color: --cultured-2: hsl(192, 24%, 96%); */
+  padding-top: 5rem;
+}
+
+/*-----------------------------------*\
+  #PROPERTY
+\*-----------------------------------*/
+
+.detail-posts {
+  background:--cultured-2: hsl(192, 24%, 96%) !important;
+  height:
+}
+
+/*-----------------------------------*\
+  #PROPERTY
+\*-----------------------------------*/
+
+.detail-content {
+  color: #46566d !important;
 }

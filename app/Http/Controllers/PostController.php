@@ -12,4 +12,10 @@ class PostController extends Controller
         $posts = Post::where("is_published", true)->get();
         return view("home", ["posts" => $posts]);
     }
+
+    public function show($id)
+    {
+        $posts = Post::findOrFail($id);
+        return view("detail", ["post" => $posts]);
+    }
 }

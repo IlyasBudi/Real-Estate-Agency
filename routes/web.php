@@ -18,3 +18,4 @@ use App\Http\Controllers\PostController;
 //     return view('home');
 // });
 Route::get("/", [PostController::class, "index"]);
+Route::get("post/{id}", [PostController::class, "show"]);
